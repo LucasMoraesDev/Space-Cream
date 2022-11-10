@@ -1,0 +1,175 @@
+:root {
+  /* COLORS */
+  --white: hsla(0, 0%, 100%, 1);
+  --purple: #eff1ff;
+  --pink-light: #feeafa;
+  --pink-dark: #cbc0d3;
+  --blue-light: #8e9aaf;
+  --blue-dark: #4a4e69;
+  --black: #23053a;
+
+  /* IMAGE URL*/
+  --url-logo1: url("./img/logo1.svg");
+  --url-logo2: url("./img/logo2.svg");
+  --url-sorvete1: url("./img/sorvete1.png");
+  --url-sorvete2: url("./img/sorvete2.png");
+  --url-sorvete4: url("./img/sorvete4.png");
+  --url-sorvete3: url("./img/sorvete3.png");
+
+  /* FONT */
+  --font-header: "Staatliches", cursive;
+  --font-paragraph: "Palanquin", sans-serif;
+  --font-size-header: 4rem;
+  --font-size-paragraph: 2rem;
+
+  /* CARD */
+  --width-size: clamp(25rem, 25.8rem + 15vw, 32rem);
+}
+
+* {
+  /* RESET */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--purple);
+}
+
+.page {
+  max-width: 100%;
+  max-height: 199.5rem;
+  margin: 0 auto;
+}
+
+header {
+  background: var(--blue-light);
+  width: 100%;
+  height: 27.9rem;
+}
+
+header .logo-wrapper {
+  padding: 3.2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo-wrapper .logo {
+  background-image: var(--url-logo2);
+  width: 13.7rem;
+  height: 13.7rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: logochange 1s ease-in-out 1s normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logochange {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1) rotate(15deg) rotateY(90deg);
+  }
+  30% {
+    background-image: var(--url-logo1);
+    transform: scale(1.5) rotate(10deg);
+  }
+  60% {
+    transform: scale(1) rotate(-10deg) rotateY(90deg);
+  }
+  100% {
+    background-image: var(--url-logo1);
+    transform: scale(1.3) rotate(0deg);
+  }
+}
+
+header h1 {
+  background: var(--pink-dark);
+  height: 4.9rem;
+  font-family: var(--font-header);
+  font-size: var(--font-size-header);
+  font-weight: 400;
+  line-height: 3.4rem;
+  color: var(--white);
+  letter-spacing: 0.05rem;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  padding: 0.8rem 0 0.7rem;
+}
+
+.content-wrapper {
+  padding: 3.2rem 3.2rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6.3rem;
+}
+
+.content-wrapper p {
+  font-family: var(--font-paragraph);
+  font-size: var(--font-size-paragraph);
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: var(--black);
+  text-align: center;
+  width: 30.5rem;
+}
+
+.content-wrapper .cards {
+  display: grid;
+  gap: 3.6rem;
+}
+
+.content-wrapper .cards .card {
+  border-radius: 20px;
+  position: relative;
+  width: var(--width-size);
+}
+
+.content-wrapper .cards .card:nth-child(odd) {
+  height: 25rem;
+}
+
+.content-wrapper .cards .card:nth-child(even) {
+  height: 45rem;
+}
+
+.content-wrapper .cards .card:nth-child(1) {
+  background-image: var(--url-sorvete1);
+}
+
+.content-wrapper .cards .card:nth-child(2) {
+  background-image: var(--url-sorvete2);
+}
+
+.content-wrapper .cards .card:nth-child(3) {
+  background-image: var(--url-sorvete3);
+}
+
+.content-wrapper .cards .card:nth-child(4) {
+  background-image: var(--url-sorvete4);
+}
+
+.content-wrapper .cards .card p {
+  width: 11.2rem;
+  height: 3.5rem;
+  background: var(--pink-light);
+  border-radius: 20px;
+
+  font-family: var(--font-header);
+  font-weight: 400;
+  font-size: var(--font-size-paragraph);
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  color: var(--blue-dark);
+
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+}
