@@ -27,19 +27,18 @@ div{
 article{
   display:flex;
   flex-direction: column;
-  gap:5px
 }
 
 .first{
   grid-area: first;
-  width: 415.5px;
+  width: 350px;
 }
 .mobile{
   grid-area: mobile;
-   width: 150px;
+   width: 130px;
 }
 .tablet{
   grid-area: tablet;
-  width: 415.5px;
+  width: 350px;
 }
 </style>
