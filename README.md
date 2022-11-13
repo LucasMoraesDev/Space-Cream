@@ -30,7 +30,7 @@ article{
 
 .first{
   grid-area: first;
-  width: 60%;
+  width: 100%;
 }
 .mobile{
   grid-area: mobile;
@@ -38,6 +38,6 @@ article{
 }
 .tablet{
   grid-area: tablet;
-  width: 60%;
+  width: 1000%;
 }
 </style>
