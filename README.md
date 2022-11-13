@@ -20,8 +20,7 @@
 div{
   display:flex;
   flex-direction: row;
-  gap:2px
-  
+
 }
 
 article{
