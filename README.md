@@ -1,4 +1,3 @@
-<main>
 # Space-Cream
 
 <a href="https://codepen.io/lucasmoraesdev/full/yLEMjPP">Visite a página!</a>
