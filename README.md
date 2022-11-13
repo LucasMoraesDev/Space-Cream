@@ -30,14 +30,14 @@ article{
 
 .first{
   grid-area: first;
-  width: 100%;
+  width: 100px;
 }
 .mobile{
   grid-area: mobile;
-   width: 100%;
+   width: 100px;
 }
 .tablet{
   grid-area: tablet;
-  width: 1000%;
+  width: 100px;
 }
 </style>
